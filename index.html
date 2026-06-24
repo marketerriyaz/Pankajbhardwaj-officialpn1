@@ -60,6 +60,34 @@ src="https://www.facebook.com/tr?id=1561376468959154&ev=PageView&noscript=1"
 
 <style>
 
+  .sticky-cta{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+padding:10px;
+background:rgba(2,11,8,.95);
+backdrop-filter:blur(10px);
+border-top:1px solid rgba(20,241,149,.2);
+z-index:9999;
+}
+
+.sticky-cta .btn{
+margin:0;
+font-size:22px;
+padding:18px;
+}
+
+@media(min-width:769px){
+.sticky-cta{
+display:none;
+}
+}
+
+body{
+padding-bottom:90px;
+}
+
 *{
 
 margin:0;
@@ -832,11 +860,13 @@ Join thousands of traders receiving free market updates, analysis & account hand
 
 
 
-<a class="btn" href="https://t.me/+Ku-qENTbkc40ZmVl">
-
+<div class="sticky-cta">
+<a class="btn"
+href="https://t.me/+Ku-qENTbkc40ZmVl"
+onclick="fbq('track','Lead');">
 ✈ Join Free Telegram Channel
-
 </a>
+</div>
 
 
 
